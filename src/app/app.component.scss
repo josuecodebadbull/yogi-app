@@ -1,0 +1,77 @@
+$kabul:#5E504A;
+
+@import '../assets/fonts.scss';
+
+.cormorant{
+    font-family:'cormorantinfant';
+}
+
+.berkshire{
+    font-family: 'berkshire';
+}
+.kabul{
+    color: #5E504A;
+}
+
+
+.pad0{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.pad-0{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.border{border: solid red;}
+.logo{ width: 50px}
+
+.panel-titulo{ 
+    span{
+        display: block;
+        font-family: 'berkshire';
+        font-size: 18px;
+        color: $kabul;
+    }
+}
+.a-menu{ 
+    font-family: 'cormorantinfant';
+    font-size: 20px;
+    text-decoration: none;
+    color: $kabul;
+}
+
+.menu-hamburguesa{
+    width: 50px;
+    height: auto;
+}
+
+.texto1{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 40px 0px;
+ }
+
+.container-about-me{
+    padding-top: 40px;
+}
+
+.h-menu{
+    height: 100px;
+}
+@media (min-width: 640px) {
+    .panel-titulo{ 
+        span{
+            font-size: 28px;
+        }
+    }   
+    .logo{ width: 80px}
+}
+
+@media (min-width: 1024px) {
+    .pad0{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+ 
