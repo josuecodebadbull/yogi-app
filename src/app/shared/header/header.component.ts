@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   public messageService: string;
 
   ngOnInit(): void {
+    this.hiddenMenu = true;
   }
 
   showMenu(){
