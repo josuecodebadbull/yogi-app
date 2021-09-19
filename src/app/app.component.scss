@@ -1,5 +1,9 @@
 $kabul:#5E504A;
 
+*{
+    font-family: 'cormorantinfant';
+}
+
 @import '../assets/fonts.scss';
 
 .cormorant{
@@ -56,9 +60,17 @@ $kabul:#5E504A;
     padding-top: 40px;
 }
 
-.h-menu{
-    height: 100px;
+//Estilos menu mobile
+.container-menu-mobile{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    div{
+        padding-bottom: 20px;
+    }
 }
+
+
+
 @media (min-width: 640px) {
     .panel-titulo{ 
         span{
@@ -73,5 +85,19 @@ $kabul:#5E504A;
         padding-left: 30px;
         padding-right: 30px;
     }
+    .h-menu{
+        height: 100px;
+    }
+
+    //estilos menu mobile
+    .container-menu-mobile{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        div{
+            padding-bottom: 0px;
+        }
+    }
+
 }
  
+

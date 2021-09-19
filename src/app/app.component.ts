@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'yogiweb';
+  
+  hiddenMenu=true;
+  
+  showMenu(){
+    this.hiddenMenu =!this.hiddenMenu;
+  }
 }
+

@@ -1,18 +1,18 @@
 <div class="header container-fluid">
   <div class="row">
 
-    <div id="menu-izq" class="col-12 col-lg-6 border">
-      <div class="container-fluid pad0 border">
+    <div id="menu-izq" class="col-12 col-lg-6 ">
+      <div class="container-fluid pad0 ">
         <div class="row h-menu align-items-center">
-          <div class="col-2 col-lg-auto border">
+          <div class="col-2 col-lg-auto ">
             <img src="../assets/images/logo2yogiweb.png" alt="" class="logo">
           </div>
-          <div class="col-8 border panel-titulo" >
+          <div class="col-8  panel-titulo" >
             <span>Laura Salazar</span>
             <span>Ashtanga Vinyasa Yoga</span>
           </div>
           <div class="col-2 d-lg-none">
-            <img src="../assets/images/menu.png" alt="" class="menu-hamburguesa">
+            <img (click)="showMenu()" src="../assets/images/menu.png" alt="" class="menu-hamburguesa">
           </div>
         </div>
       </div>
@@ -20,19 +20,22 @@
 
 
 
-    <div id="menu-der" class="col-6 d-none d-lg-block border ">
-      <div class="container">
+    <div id="menu-der" 
+       class="col-12 col-lg-6"
+       [ngClass]="{'d-none': hiddenMenu}"
+       >
+      <div class="container-menu-mobile container">
         <div class="row h-menu align-items-center justify-content-end">
-          <div class="col-auto">
+          <div class="col-12 col-lg-auto text-center">
             <a href="" class="a-menu"> Inicio</a>
           </div>
-          <div class="col-auto">
+          <div class="col-12 col-lg-auto text-center">
             <a href="" class="a-menu"> Clases y precios</a>
           </div>
-          <div class="col-auto">
+          <div class="col-12 col-lg-auto text-center">
             <a href="" class="a-menu"> Blog</a>
           </div>
-          <div class="col-auto">
+          <div class="col-12 col-lg-auto text-center">
             <a href="" class="a-menu"> Contacto</a>
           </div>
         </div> 
@@ -57,7 +60,7 @@
         UN POCO SOBRE MI...
       </h3>    
       <p class="texto1 cormorant kabul">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Mi nombre es Laura Salazar, amante de los animales, la naturaleza y los viajes, mi camino en el yoga empezo hace 10 años, por casualidad, pero sin duda lo mejor que ha pasado en la vida, este camino me ha echo pasar por varias facetas, aprendizajes y lecciones, pero sobre todo me ha hecho evlucionar como persona, ayudandome cada día a ser la mejor versión de mi misma. Actualmente tengo mas de 4 años de práctica constante, para mi, el yoga es un estilo de vida, es algo que te acompaña día a día en todas tus acciones y como mencioné te ayuda a ser la mejor versión de ti. Según el libro de los Yoga-sutras de Patañjali “yoga es la unión del cuerpo, mente y alma”, no podría estar más de acuerdo.
           </p>  
     </div>
   </div>
