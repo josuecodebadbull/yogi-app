@@ -1,0 +1,62 @@
+$kabul:#5E504A;
+
+.logo{ width: 50px}
+
+.panel-titulo{ 
+    span{
+        display: block;
+        font-family: 'berkshire';
+        font-size: 18px;
+        color: $kabul;
+    }
+}
+.a-menu{ 
+    font-family: 'cormorantinfant';
+    font-size: 20px;
+    text-decoration: none;
+    color: $kabul;
+}
+
+.menu-hamburguesa{
+    width: 50px;
+    height: auto;
+}
+
+//Estilos menu mobile
+
+.container-menu-mobile{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    div{
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 640px) {
+    .panel-titulo{ 
+        span{
+            font-size: 28px;
+        }
+    }   
+    .logo{ width: 80px}
+}
+
+@media (min-width: 1024px) {
+    .pad0{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .h-menu{
+        height: 100px;
+    }
+
+    //Estilos menu mobile
+    .container-menu-mobile{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        div{
+            padding-bottom: 0px;
+        }
+    }
+}
+ 

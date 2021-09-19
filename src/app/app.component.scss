@@ -1,5 +1,10 @@
 $kabul:#5E504A;
 
+
+*{
+    font-family: 'cormorantinfant';
+}
+
 @import '../assets/fonts.scss';
 
 .cormorant{
@@ -24,27 +29,7 @@ $kabul:#5E504A;
 }
 
 .border{border: solid red;}
-.logo{ width: 50px}
 
-.panel-titulo{ 
-    span{
-        display: block;
-        font-family: 'berkshire';
-        font-size: 18px;
-        color: $kabul;
-    }
-}
-.a-menu{ 
-    font-family: 'cormorantinfant';
-    font-size: 20px;
-    text-decoration: none;
-    color: $kabul;
-}
-
-.menu-hamburguesa{
-    width: 50px;
-    height: auto;
-}
 
 .texto1{
     font-size: 20px;
@@ -56,22 +41,26 @@ $kabul:#5E504A;
     padding-top: 40px;
 }
 
-.h-menu{
-    height: 100px;
+
+//Estilos menu mobile
+
+.container-menu-mobile{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    div{
+        padding-bottom: 20px;
+    }
 }
+
+
 @media (min-width: 640px) {
-    .panel-titulo{ 
-        span{
-            font-size: 28px;
-        }
-    }   
-    .logo{ width: 80px}
+    
 }
 
 @media (min-width: 1024px) {
     .pad0{
         padding-left: 30px;
         padding-right: 30px;
-    }
+    }   
 }
  
