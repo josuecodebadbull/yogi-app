@@ -1,0 +1,15 @@
+.panel-select{
+    height: 100px;
+}
+.pranayama-form{
+    padding-top: 100px;
+    .title{
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 640px) {
+    .panel-select{
+        height: 200px;
+    }
+}
