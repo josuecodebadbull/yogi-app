@@ -1,25 +1,11 @@
 $kabul:#5E504A;
 
-
 *{
     font-family: 'cormorantinfant';
 }
 
 @import '../assets/fonts.scss';
 
-.cormorant{
-    font-family:'cormorantinfant';
-}
-
-.berkshire{
-    font-family: 'berkshire';
-}
-.kabul{
-    color: #5E504A;
-}
-.hy-serif{
-    font-family: 'hy-serif';
-}
 
 .pad0{
     padding-left: 0px;
@@ -29,9 +15,6 @@ $kabul:#5E504A;
     padding-left: 0px;
     padding-right: 0px;
 }
-
-.border{border: solid red;}
-
 
 .texto1{
     font-size: 20px;
