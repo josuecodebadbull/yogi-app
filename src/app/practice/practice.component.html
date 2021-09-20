@@ -13,38 +13,83 @@
         <form [formGroup]="pranayamaForm" (ngSubmit)="onSubmit()" class="pranayama-form">
             <div class="container">
                 <div class="row">
-                    <div class="panel-select d-flex align-content-center flex-wrap border col-12 col-md-4">
-                        <div class="d-flex flex-column">
+                    <div class="panel-select d-flex align-content-between flex-wrap col-12 col-md-4">
+                        <div class="d-flex flex-column h-100 w-100">
                             <span class="cormorant title">Elige el número de repeticiones</span>
-                            <select (change)="changeRepeat($event)" formControlName="repeats">
-                                <option value="" disabled>Choose</option>
-                                <option *ngFor="let item of repeatsCatalog" [value]="item">{{item}}</option>
-                            </select>
+                            <div class="select mt-auto">
+                                <select (change)="changeRepeat($event)" formControlName="repeats">
+                                    <option value="" disabled>Choose</option>
+                                    <option *ngFor="let item of repeatsCatalog" [value]="item">{{item}}</option>
+                                </select>
+                                <div class="select_arrow">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="panel-select d-flex align-content-center flex-wrap border col-12 col-md-4">
-                        <div class="d-flex flex-column">
-                            <span class="cormorant title">Elige el número de repeticiones</span>
-                            <select (change)="changeRepeat($event)" formControlName="timeInEx">
-                                <option value="" disabled>Choose</option>
-                                <option *ngFor="let item of repeatsCatalog" [value]="item">{{item}}</option>
-                            </select>
+                    <div class="panel-select d-flex align-content-between flex-wrap col-12 col-md-4">
+                        <div class="d-flex flex-column h-100 w-100">
+                            <span class="cormorant title">Elige el número de segundos en inhalación y exhalación</span>
+                            <div class="select mt-auto">
+                                <select (change)="changeRepeat($event)" formControlName="timeInEx">
+                                    <option value="" disabled>Choose</option>
+                                    <option *ngFor="let item of repeatsCatalog" [value]="item">{{item}}</option>
+                                </select>
+                                <div class="select_arrow">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="panel-select d-flex align-content-center flex-wrap border col-12 col-md-4">
-                        <div class="d-flex flex-column">
-                            <span class="cormorant title">Elige el número de repeticiones</span>
-                            <select (change)="changeRepeat($event)" formControlName="timeRetention">
-                                <option value="" disabled>Choose</option>
-                                <option *ngFor="let item of repeatsCatalog" [value]="item">{{item}}</option>
-                            </select>
+                    <div class="panel-select d-flex align-content-between flex-wrap col-12 col-md-4">
+                        <div class="d-flex flex-column h-100 w-100">
+                            <span class="cormorant title">Elige el número de segundos en retención</span>
+                            <div class="select mt-auto">
+                                <select (change)="changeRepeat($event)" formControlName="timeRetention">
+                                    <option value="" disabled>Choose</option>
+                                    <option *ngFor="let item of repeatsCatalog" [value]="item">{{item}}</option>
+                                </select>
+                                <div class="select_arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-timer container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 pt-5">
+                                <button type="submit" [disabled]="!pranayamaForm.valid" class="button">INICIAR</button>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 pt-5">
+                                <span class="button">
+                                    PAUSAR
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 pt-5">
+                                <span class="button">
+                                    REINICIAR
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 pt-5">
+                                <span class="button">
+                                    RESET
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button type="submit" [disabled]="!pranayamaForm.valid">Submit</button>
         </form>
+    </div>
+</div>
+
+<div class="panel-timer container">
+    <div class="row">
+        <div class="col-6">
+            CRONOMETRO
+        </div>
+        <div class="col-6">
+            ACCIÓN
+        </div>
     </div>
 </div>
