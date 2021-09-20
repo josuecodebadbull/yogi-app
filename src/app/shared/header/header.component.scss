@@ -5,7 +5,7 @@ $kabul:#5E504A;
 .panel-titulo{ 
     span{
         display: block;
-        font-family: 'berkshire';
+        font-family: 'hy-serif';
         font-size: 18px;
         color: $kabul;
     }
@@ -35,7 +35,7 @@ $kabul:#5E504A;
 @media (min-width: 640px) {
     .panel-titulo{ 
         span{
-            font-size: 28px;
+            font-size: 35px;
         }
     }   
     .logo{ width: 80px}
@@ -47,7 +47,7 @@ $kabul:#5E504A;
         padding-right: 30px;
     }
     .h-menu{
-        height: 100px;
+        height: 200px;
     }
 
     //Estilos menu mobile
