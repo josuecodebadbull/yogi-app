@@ -58,10 +58,10 @@
                     <div class="panel-timer container">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-3 pt-5">
-                                <button type="submit" [disabled]="!pranayamaForm.valid" class="button">INICIAR</button>
+                                <button (click)="cd.begin()" type="submit" [disabled]="!pranayamaForm.valid" class="button">INICIAR</button>
                             </div>
                             <div class="col-12 col-md-6 col-lg-3 pt-5">
-                                <span class="button">
+                                <span (click)="cd.pause()" class="button">
                                     PAUSAR
                                 </span>
                             </div>
@@ -82,14 +82,14 @@
         </form>
     </div>
 </div>
-
 <div class="panel-timer container">
     <div class="row">
-        <div class="col-6">
+        <div class="d-flex flex-column  col-6">
             CRONOMETRO
+            <countdown #cd (event)="handleEvent($event)" [config]="{leftTime: timeInExNum , demand: true , format: 'mm:ss'}" class="custom-style"></countdown>
         </div>
-        <div class="col-6">
-            ACCIÓN
+        <div class="d-flex flex-column  col-6">
+            ACCIÓN            
         </div>
     </div>
 </div>

@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { PracticeComponent } from './practice/practice.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    CountdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
