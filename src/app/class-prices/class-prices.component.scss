@@ -4,6 +4,7 @@
         font-size: 32px;
         padding-bottom: 30px;
         font-family: 'cormorantinfant';
+        padding-top: 30px;
     
     }
     span{
@@ -16,10 +17,11 @@
     }
     .subtitles{
         padding-bottom: 50px;
+
         
     }
     .pad-top{
-        padding-top: 80px;
+        padding-top: 120px;
     }
     .pad-foto{
         padding-left: 100px;
@@ -28,4 +30,19 @@
     .kabul{
     color: #5E504A;
     }
+    .background-prices{
+        background-color: #FAF5F3;
+    }
+}
+
+
+// Estilo mobile
+
+@media (min-width: 640px) {
+    .img-precios {width: 600px}
+}
+
+@media (min-width: 1024px){
+    .img-precios {width: 500px}
+
 }
