@@ -11,6 +11,8 @@ import { PracticeComponent } from './practice/practice.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CountdownModule } from 'ngx-countdown';
+import { FooterComponent } from './shared/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CountdownModule } from 'ngx-countdown';
     ClassPricesComponent,
     HomeComponent,
     PracticeComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,

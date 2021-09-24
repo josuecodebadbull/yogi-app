@@ -6,8 +6,7 @@ import { CountdownConfig, CountdownEvent } from 'ngx-countdown';
   selector: 'app-practice',
   templateUrl: './practice.component.html',
   styleUrls: ['./practice.component.scss'],
-  host: {
-    '[class.card]': `true`,
+  host: {    
     '[class.text-center]': `true`,
   },
   styles: [
