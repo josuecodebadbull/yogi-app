@@ -6,43 +6,83 @@
             </span>
         </div>
         <div class="col-7 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4  padd-top">
-                        <span>
-                            Nombre completo:
-                        </span>
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4  padd-top">
+                            <span>
+                                Nombre completo:
+                            </span>
+                        </div>
+                        <div class="col-8  padd-top">
+                            <input class="input" type="text" formControlName="name" required>
+
+
+                            <div *ngIf="
+                                    contactForm.controls['name'].invalid &&
+                                    (contactForm.controls['name'].dirty ||
+                                    contactForm.controls['name'].touched)
+                                " class="">
+
+                                <div *ngIf="contactForm.controls['name'].errors.required">
+                                    <span class="cormorant kabul text">
+                                        Campo requerido
+                                    </span>
+                                </div>                                
+                            </div>
+
+
+                        </div>
+                        <div class="col-4  padd-top">
+                            <span>
+                                Correo electrónico:
+                            </span>
+                        </div>
+                        <div class="col-8  padd-top">
+                            <input class="input" type="text" formControlName="email" required>
+                            <div *ngIf="
+                                    contactForm.controls['email'].invalid &&
+                                    (contactForm.controls['email'].dirty ||
+                                    contactForm.controls['email'].touched)
+                                " class="">
+
+                                <div *ngIf="contactForm.controls['email'].errors.required">
+                                    <span class="cormorant kabul text">
+                                        Campo requerido
+                                    </span>
+                                </div>
+                                <div *ngIf="contactForm.controls['email'].errors.email">
+                                    <span class="cormorant kabul text">
+                                        No es email
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4  padd-top">
+                            <span>
+                                Teléfono (opcional):
+                            </span>
+                        </div>
+                        <div class="col-8  padd-top">
+                            <input class="input" type="text">
+                        </div>
+                        <div class="col-12 d-flex flex-column padd-top">
+                            <span>
+                                Comentarios
+                            </span>
+                            <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                        </div>                        
+                        <button class="btn d-flex align-items-center" type="submit">                            
+                            <div [ngClass]="{'d-none': sending}" class="spinner spinner-grow" role="status">
+                                <span class="sr-only"></span>
+                            </div>
+                            <span [ngClass]="{'d-none': sending}">
+                                ENVIAR
+                            </span>
+                        </button>
                     </div>
-                    <div class="col-8  padd-top">
-                        <input class="input" type="text">
-                    </div>
-                    <div class="col-4  padd-top">
-                        <span>
-                            Correo electrónico:
-                        </span>
-                    </div>
-                    <div class="col-8  padd-top">
-                        <input class="input" type="text">
-                    </div>
-                    <div class="col-4  padd-top">
-                        <span>
-                            Teléfono (opcional):
-                        </span>
-                    </div>
-                    <div class="col-8  padd-top">
-                        <input class="input" type="text">
-                    </div>
-                    <div class="col-12 d-flex flex-column padd-top">
-                        <span>
-                            Comentarios
-                        </span>
-                        <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <span class="padd-send text-center ">
-                        ENVIAR
-                    </span>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="col-5 padd-top">
             <img src="../assets/images/fotocontact.jpg" alt="" class="img-contact">

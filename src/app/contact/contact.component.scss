@@ -12,7 +12,7 @@ span{
 }
 .input{
     width: 100%;
-    height: 100%;
+    height: 40px;
     background-color: white ;
     border: 0;
     padding: 15px 25px;
@@ -23,9 +23,32 @@ span{
 .background-contact{
     background-color: #FAF5F3;
 }
-.padd-send{
-    padding-top: 60px ;
-}
+
 .textarea{
     border: 0;
+    min-height: 260px;
+    max-height: 260px;
+    padding: 30px;
+}
+
+.btn{
+    margin: 30px 15px;
+    
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #5E504A;
+    
+    span{
+        font-family:'cormorantinfant';
+        font-weight: bolder;
+        letter-spacing: 3px;
+        color: white;
+    }
+    .spinner{
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        color: white;
+    }
 }
